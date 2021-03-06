@@ -47,7 +47,6 @@ body {
 .container {
 	width: 1138px;
 	margin: 0 auto;
-
 }
 
 .header__wrapper {
@@ -82,15 +81,9 @@ body {
 	fill: var(--dark-pink);
 }
 
-.header__button: focus .header__icon {
-	fill: var(--dark-pink);
-}
-
 .registration {
 	background-color: var(--pink);
 	min-height: 138px;
-	
-	
 }
 
 .registration__text {
@@ -167,7 +160,6 @@ body {
 	line-height: 16px;
 	padding: 15px 0 35px 0;
 	color: var(--super-light-gray);
-
 }
 
 .content__form-button {
@@ -235,7 +227,6 @@ body {
 
 }
 
-
 .contacts {
 	background-image: url(../img/bg-subscribe.png);
 	padding: 97px 0 126px 0;
@@ -254,7 +245,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
 }
 
 .contacts__feedback-text {
@@ -273,8 +263,6 @@ body {
 	display: flex;
 	justify-content: center;
 	min-height: 49px;
-
-
 }
 
 .contacts__form-email {
@@ -296,7 +284,6 @@ body {
 	border: 1px solid red;
 	background: white;
 	cursor: pointer;
-
 }
 
 .contacts__form-button {
@@ -346,12 +333,10 @@ body {
 	justify-content: space-between;
 }
 
-
 .footer__text {
 	color: var(--white);
 	align-self: center;
 }
-
 
 .icons-wrapper {
 	display: flex;
@@ -367,14 +352,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-right: 8px;
-
 }
 
 
 .footer__icon {
 	fill: var(--dark-blue);
-
-
 }
 
 .footer__link:hover {
@@ -382,7 +364,7 @@ body {
 }
 
 .footer__link:hover .footer__icon {
-	 fill: var(--white);
+	fill: var(--white);
 }
 
 

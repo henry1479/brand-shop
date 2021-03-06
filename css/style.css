@@ -111,7 +111,6 @@ body {
 .brand__button-wrapper {
 	display: flex;
 	justify-content: flex-end;
-
 }
 
 .brand__button {
@@ -204,7 +203,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .offers__item--woman {
@@ -240,7 +238,6 @@ body {
 	text-transform: uppercase;
 	line-height: 28px;
 	font-weight: 700;
-
 }
 
 .products {
@@ -259,7 +256,6 @@ body {
 	color: #9F9F9F;
 	text-align: center;
 	padding: 0 0 48px 0;
-
 }
 
 .products__list {
@@ -268,8 +264,6 @@ body {
 	flex-wrap: wrap;
 	align-content: space-between;
 	margin: 0 0 18px 0;
-	
-
 }
 
 .products__item {
@@ -278,7 +272,6 @@ body {
 	background-color: var(--gray);
 	margin-bottom: 30px;
 	position: relative;
-
 }
 
 .products__overlay {
@@ -292,7 +285,6 @@ body {
   background:rgba(58,56,56,0.8);
   position: absolute;
   top: 0;
-  /*display: none;*/
 }
 
 .cart {
@@ -320,7 +312,6 @@ body {
 .products__item:hover .cart {
 	display: flex;
 }
-
 
 .products__item-heading {
 	font-size: 13px;
@@ -356,7 +347,6 @@ body {
 	display: block;
 	box-sizing: border-box;
 	font-size: 16px;
-	
 }
 
 .products__button:hover,
@@ -370,7 +360,6 @@ body {
 
 .advantages {
 	background-color: var(--dark-blue_2);
-
 }
 
 .advantages__list {
@@ -378,7 +367,6 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 341px;
-
 }
 
 .advantages__item {
@@ -394,11 +382,10 @@ body {
 	height: 40px;
 }
 
-.advantages__item-heading{
+.advantages__item-heading {
 	font-size: 19px;
 	line-height: 24px;
 	padding: 28px 0 16px 0;
-
 }
 
 .advantages__item-text {
@@ -406,13 +393,11 @@ body {
 	font-size: 13px;
 	line-height: 17px;
 	width: 360px;
-
 }
 
 .contacts {
 	background-image: url(../img/bg-subscribe.png);
 	padding: 97px 0 126px 0;
-
 }
 
 .contacts__wrapper {
@@ -427,7 +412,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
 }
 
 .contacts__feedback-text {
@@ -446,8 +430,6 @@ body {
 	display: flex;
 	justify-content: center;
 	min-height: 49px;
-
-
 }
 
 .contacts__form-email {
@@ -467,7 +449,6 @@ body {
 	border: 1px solid red;
 	background: white;
 	cursor: pointer;
-
 }
 
 .contacts__form-button {
@@ -538,14 +519,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-right: 8px;
-
 }
 
 
 .footer__icon {
 	fill: var(--dark-blue);
-
-
 }
 
 .footer__link:hover {
@@ -553,7 +531,7 @@ body {
 }
 
 .footer__link:hover .footer__icon {
-	 fill: var(--white);
+	fill: var(--white);
 }
 
 
