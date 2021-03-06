@@ -75,14 +75,8 @@ body {
 	text-decoration: none;
 }
 
-
-
 .header__link:hover .header__icon,
 .header__link:active .header__icon {
-	fill: var(--dark-pink);
-}
-
-.header__button: focus .header__icon{
 	fill: var(--dark-pink);
 }
 
