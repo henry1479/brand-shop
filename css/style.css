@@ -57,6 +57,7 @@ body {
 
 .header__logo-link {
 	text-decoration: none;
+	padding-right: 41px;
 }
 
 .header__button {
