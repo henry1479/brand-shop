@@ -1,0 +1,100 @@
+.brand {
+    	display: flex;
+    	margin: 0 0 63px 0;
+    
+    .brand__overlay-wrapper {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        .brand__overlay-subwrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+    
+            .brand__overlay {
+                background: rgba(58,56,56,0.8);
+                height: 100%;
+                width: 100%;
+            }
+    
+            .brand__nav {
+                background: $white;
+                height: 100%;
+                width: 232px;
+                padding: 16px 0 0 34px;
+                box-sizing: border-box;
+    
+                .brand__button-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    .brand__button {
+                        border: none;
+                        outline: none;
+                        margin-right: 16px;
+                    }
+                }
+    
+                .brand__nav-title {
+                    padding: 10px 0;
+                }
+    
+                .brand__list {
+                    padding-top: 10px;
+    
+                    .brand__subitem {
+                        padding-bottom: 10px;
+                    }
+                    .brand__nav-title, 
+                    .brand__nav-subtitle,
+                    .brand__link {
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-transform: uppercase;
+                    }
+                    .brand__nav-subtitle {
+                        color: $dark-pink;
+                        padding-bottom: 12px;
+                    }
+                    
+                    .brand__link {
+                        color: #6F6E6E;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+        }
+    }
+   
+    
+    .brand__title-wrapper {
+    	background-color: $pink;
+    	flex-grow: 1;
+    	display: flex;
+    	align-items: center;
+    	padding: 0 0 0 91px;
+        .brand__title{
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+            text-transform: uppercase;
+            padding: 0 0 0 10px;
+            border-left: 12px solid $dark-pink;
+        }
+        .brand__subtitle {
+            display: block;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            &__subtitle--pink {
+                color: $dark-pink;
+                display: inline;
+            
+            }
+        }
+        
+    }
+}

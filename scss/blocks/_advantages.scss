@@ -1,0 +1,36 @@
+.advantages {
+    background-color: $dark-navy;
+    
+    .advantages__list {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	min-height: 341px;
+    }
+    
+    .advantages__item {
+    	color: $white;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-between;
+    	align-items: center;
+    	text-align: center;
+    }
+    
+    .advantages__wrapper {
+    	height: 40px;
+    }
+    
+    .advantages__item-heading {
+    	font-size: 19px;
+    	line-height: 24px;
+    	padding: 28px 0 16px 0;
+    }
+    
+    .advantages__item-text {
+    	font-weight: 300;
+    	font-size: 13px;
+    	line-height: 17px;
+    	width: 360px;
+    }
+}
