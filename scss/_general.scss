@@ -22,11 +22,19 @@ body {
 }
 
 .active {
-	
+	display: block;
 }
 
 .container {
-	width: 1138px;
+	width: 75%;
 	margin: 0 auto;
-
+	@include tablet {
+		width: 95%;
+		margin: 0 auto;
+	}
+	@include mobile {
+		width: 96%;
+		margin: 0 auto;
+	}
 }
+

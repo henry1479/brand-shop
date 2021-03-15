@@ -1,6 +1,7 @@
 .header {
     background-color: $dark-blue;
 
+
     .header__wrapper {
         min-height: 75px;
         display: flex;
@@ -17,6 +18,9 @@
             border: none;
             margin: 0 30px 0 0;
             outline: none;
+            @include mobile {
+                margin: 0;
+            }
         }
         
         .header__link .header__icon {
@@ -26,11 +30,17 @@
         .header__person-link {
             margin: 0 30px 0 0;
             text-decoration: none;
+            @include mobile {
+                display: none;
+            }
         }
 
         .header__cart-link {
             position: relative;
             text-decoration: none;
+            @include mobile {
+                display: none;
+            }
             .header__cart-link--counter {
                 border-radius: 50%;
                 background: $dark-pink;
@@ -45,8 +55,6 @@
             }
             
         }
-
-        
         
         .header__link:hover .header__icon,
         .header__link:active .header__icon {

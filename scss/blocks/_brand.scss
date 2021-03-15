@@ -1,6 +1,10 @@
 .brand {
     	display: flex;
     	margin: 0 0 63px 0;
+        @include tablet {
+            margin: 0 0 21px 0;
+        }
+
     
     .brand__overlay-wrapper {
         display: none;
@@ -13,7 +17,7 @@
             height: 100%;
     
             .brand__overlay {
-                background: rgba(58,56,56,0.8);
+                background: $overlay-color;
                 height: 100%;
                 width: 100%;
             }
@@ -24,6 +28,12 @@
                 width: 232px;
                 padding: 16px 0 0 34px;
                 box-sizing: border-box;
+                @include tablet {
+                    width: 50%;
+                }
+                @include mobile {
+                   width: 100%;
+                }
     
                 .brand__button-wrapper {
                     display: flex;
@@ -41,6 +51,15 @@
     
                 .brand__list {
                     padding-top: 10px;
+                    @include tablet {
+                        display: flex;;
+                    }
+
+                    .brand__item {
+                        @include tablet {
+                            margin-right: 30px;
+                        }
+                    }
     
                     .brand__subitem {
                         padding-bottom: 10px;
@@ -69,32 +88,63 @@
         }
     }
    
-    
+    .brand__image {
+        width: 50%;
+        height: auto;
+        
+        @include mobile {
+            display: none;
+        }
+        
+    }
     .brand__title-wrapper {
     	background-color: $pink;
     	flex-grow: 1;
     	display: flex;
     	align-items: center;
     	padding: 0 0 0 91px;
-        .brand__title{
+
+        @include tablet {
+            padding: 0 0 0 41px;
+        }
+
+        @include mobile {
+            min-height: 383px;
+        }
+
+
+        .brand__title {
             font-weight: 900;
             font-size: 48px;
             line-height: 58px;
             text-transform: uppercase;
             padding: 0 0 0 10px;
             border-left: 12px solid $dark-pink;
+            @include tablet {
+                @include font(44px, 55px, 900);
+            }
+            @include mobile {
+                @include font(38px, 46px, 900);
+            }
         }
         .brand__subtitle {
             display: block;
             font-size: 32px;
             font-weight: 700;
             line-height: 38px;
-            &__subtitle--pink {
+            @include tablet {
+                @include font(24px, 29px,900);
+            }
+
+            @include mobile {
+                @include font(20px, 24px,900);
+            }
+        
+            &--pink {
                 color: $dark-pink;
                 display: inline;
-            
             }
         }
-        
     }
+        
 }
