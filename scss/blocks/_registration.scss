@@ -8,5 +8,8 @@
         line-height: 29px;
         text-transform: uppercase;
         padding: 59px 0;
+        @include mobile {
+            text-align: center;
+        }
     }
 }

@@ -8,3 +8,27 @@
     border: none;
     outline: none;
 }
+
+@mixin font($size, $heght, $weight: 400, $style:normal) {
+    font-size: $size;
+    line-height: $heght;
+    font-weight: $weight;
+    font-style: $style;
+}
+@mixin desktop {
+    @media (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}

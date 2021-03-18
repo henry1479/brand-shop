@@ -2,11 +2,18 @@
 .footer {
 	padding: 30px 0;
 	background-color: $dark-blue;
+    @include mobile {
+        padding: 0 0 9px 0;
+    }
 
 
     .footer__wrapper {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
 
@@ -19,6 +26,9 @@
     .icons-wrapper {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            padding: 43px 0 40px 0;
+        }
     }
 
     .footer__link {

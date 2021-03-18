@@ -1,14 +1,23 @@
 .content {
 	padding: 64px 0 138px 0;
+    @include tablet {
+        padding: 40px 0 96px 0;
+    }
 
     .content__wrapper {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     .content__wrapper-form {
         max-width: 360px;
         padding-right: 128px;
+        @include tablet {
+            padding-right: 22px;
+        }
     }
 
     .content__form {
@@ -20,6 +29,7 @@
         color: $dark-blue;
     }
 
+
     .content__form-name {
         margin: 20px 0 0 0;
         border: 1px solid $light-gray;
@@ -28,6 +38,9 @@
         min-height: 45px;
         box-sizing:border-box;
         padding-left: 16px;
+        @include mobile {
+            width: 100%;
+        }
     }
 
 
@@ -90,6 +103,14 @@
         line-height: 29px;
         text-transform: uppercase;
         margin-bottom: 22px;
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 32px;
+        }
+        @include mobile {
+            margin-top: 40px;
+        }
     }
 
     .list-text {
@@ -98,6 +119,11 @@
         line-height: 29px;
         width: 652px;
         margin-bottom: 21px;
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+            width: auto;
+        }
     }
 
     .content__list {
@@ -112,6 +138,10 @@
         line-height: 29px;
         padding-top: 16px;
         padding-left: 38px;
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 
     .content__item:before {
@@ -123,6 +153,9 @@
         top: 25px;
         background-image: url(../img/check.svg);
         background-size: 15px 15px;
+        @include tablet {
+            top: 15px
+        }
 
     }
 
