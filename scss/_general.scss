@@ -29,11 +29,11 @@ body {
 	width: 75%;
 	margin: 0 auto;
 	@include tablet {
-		width: 100%;
+		width: 95%;
 		margin: 0 auto;
 	}
 	@include mobile {
-		width: 94%;
+		width: 93%;
 		margin: 0 auto;
 	}
 }
@@ -93,4 +93,21 @@ body {
 	margin-right: 22px;
 	font-size: 22px;
 }
+
+
+  @keyframes rotate-center {
+	0% {
+	  transform: rotate(0);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  .row > * {
+	  padding-left: 0;
+	  padding-right: 0;
+  }
+
+ 
 

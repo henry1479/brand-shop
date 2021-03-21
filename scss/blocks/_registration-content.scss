@@ -90,11 +90,14 @@
         line-height: 17px;
         padding: 16px 30px;
         font-family: Lato;
+        transition: transform 1000ms ease-in-out;
+        
     }
 
     .content__form-button:hover,
-    .content__form-button:focus {
+    .content__form-button:active {
         opacity: 0.5;
+        transform: translateY(-5px);
     }
 
     .list-title {

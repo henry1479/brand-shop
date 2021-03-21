@@ -1,4 +1,4 @@
-.contacts {
+.product-contacts {
     background-image: url(../img/bg-subscribe.png);
     padding: 97px 0 126px 0;
 	@include tablet {
@@ -9,7 +9,7 @@
 		padding: 54px 0 109px 0;
 	}
     
-    .contacts__wrapper {
+    .product-contacts__wrapper {
     	display: flex;
     	justify-content: space-between;
 		@include tablet {
@@ -18,7 +18,7 @@
 		}
     }
     
-    .contacts__feedback {
+    .product-contacts__feedback {
     	width: 360px;
     	display: flex;
     	flex-direction: column;
@@ -33,7 +33,7 @@
 		}
     }
     
-    .contacts__feedback-text {
+    .product-contacts__feedback-text {
     	font-size: 20px;
     	line-height: 24px;
     	padding: 30px 0 0 0;
@@ -42,19 +42,19 @@
 		}
     }
     
-    .contacts__form {
+    .product-contacts__form {
     	display: flex;
     	flex-direction: column;
     	justify-content: flex-end;
     }
     
-    .contacts__form-content {
+    .product-contacts__form-content {
     	display: flex;
     	justify-content: center;
     	min-height: 49px;
     }
     
-    .contacts__form-email {
+    .product-contacts__form-email {
     	background: $light-gray;
     	width: 256px;
     	box-sizing: border-box;
@@ -69,14 +69,14 @@
 		}
     }
     
-    .contacts__form-email:hover,
-    .contacts__form-email:focus {
+    .product-contacts__form-email:hover,
+    .product-contacts__form-email:focus {
     	border: 1px solid red;
     	background: white;
     	cursor: pointer;
     }
     
-    .contacts__form-button {
+    .product-contacts__form-button {
     	width: 100px;
     	border: none;
     	border-radius: 0 20px 20px 0;
@@ -88,16 +88,16 @@
     	outline: none;
     }
     
-    .contacts__form-button:hover,
-    .contacts__form-button:focus {
+    .product-contacts__form-button:hover,
+    .product-contacts__form-button:focus {
     	opacity: 0.5;
     }
     
-    .contacts__form-button:active {
+    .product-contacts__form-button:active {
     	opacity: 0.7;
     }
     
-    .contacts__form-title {
+    .product-contacts__form-title {
     	font-weight: bold;
     	line-height: 167%;
     	font-size: 24px;
@@ -108,7 +108,7 @@
 		}
     }
     
-    .contacts__form-text {
+    .product-contacts__form-text {
     	font-size: 18px;
     	text-transform: uppercase;
     	text-align: center;

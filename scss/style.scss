@@ -1,6 +1,5 @@
 
 @import './fonts';
-@import './bootstrap';
 @import './variables';
 @import './mixins';
 @import './reset';
@@ -21,3 +20,6 @@
 // product.html 
 @import './product-blocks/product-header';
 @import './product-blocks/product-description';
+@import './product-blocks/product-products';
+@import './product-blocks/product-contacts';
+@import './product-blocks/product-footer';

@@ -38,7 +38,6 @@
     
     .products__item {
     	width: 360px;
-    	min-height: 581px;
     	background-color: $gray;
     	margin-bottom: 30px;
     	position: relative;
@@ -90,6 +89,7 @@
         left: 50%;
         transform: translate(-50%, -35%);
         display: none;
+		transition: transform 700ms ease, translate 700ms ease;
     }
     
     .products__item:hover .products__overlay {
@@ -99,6 +99,10 @@
     .products__item:hover .cart {
     	display: flex;
     }
+
+	.cart:hover {
+		transform: translate(-50%, -35%) scale(1.1);
+	}
 
 	.products__item-image {
 		display: block;
@@ -121,7 +125,7 @@
     	padding: 0 0 18px 18px;
     	width: 314px;
 		@include tablet {
-			width: 100%;
+			width: 90%;
 		}
 		@include mobile {
 			width: 91%;
@@ -131,7 +135,7 @@
     .products__item-price {
     	line-height: 19px;
     	color: $dark-pink;
-    	padding: 0 0 0 18px;
+    	padding: 0 0 18px 18px;
     }
     
     .products__button {
@@ -146,15 +150,16 @@
     	display: block;
     	box-sizing: border-box;
     	font-size: 16px;
-
     }
 
+	
+
 	.products__button:hover,
-	.products__button:focus,
 	.products__button:active {
 	color: $white;
 	background: $dark-pink;
 	cursor: pointer;
+	animation: rotate-center 0.6s ease-in-out both;
 	}
 
 }

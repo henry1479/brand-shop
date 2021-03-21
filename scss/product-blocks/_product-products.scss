@@ -1,31 +1,18 @@
-.products {
+.product-products {
     padding: 0 0 95px 0;
 	
 	@include tablet {
 		padding-bottom: 65px;
 	}
     
-    .products__heading {
+    .product-products__heading {
     	font-size: 30px;
     	line-height: 36px;
     	text-align: center;
     }
     
-    .products__text {
-    	font-size: 14px;
-    	line-height: 17px;
-    	color: #9F9F9F;
-    	text-align: center;
-    	padding: 0 0 48px 0;
-		@include tablet {
-			padding-bottom: 74px;
-		}
-		@include tablet {
-			padding-bottom: 64px;
-		}
-    }
     
-    .products__list {
+    .product-products__list {
     	display: flex;
     	justify-content: space-between;
     	flex-wrap: wrap;
@@ -36,9 +23,8 @@
 		}
     }
     
-    .products__item {
+    .product-products__item {
     	width: 360px;
-    	min-height: 581px;
     	background-color: $gray;
     	margin-bottom: 30px;
     	position: relative;
@@ -51,15 +37,21 @@
 		}
     }
 
-	.products__overlay-wrapper {
+	.product-products__item--none {
+        @include desktop {
+            display: none;
+        }
+    }
+
+	.product-products__overlay-wrapper {
 		position:relative;
 	}
     
-    .products__overlay {
+    .product-products__overlay {
     	display: none;
     }
     
-    .products__overlay:before {
+    .product-products__overlay:before {
       content: '';
       width: 100%;
       min-height: 100%;
@@ -86,28 +78,28 @@
         display: none;
     }
     
-    .products__item:hover .products__overlay {
+    .product-products__item:hover .product-products__overlay {
     	display: block;
     }
     
-    .products__item:hover .cart {
+    .product-products__item:hover .cart {
     	display: flex;
     }
 
-	.products__item-image {
+	.product-products__item-image {
 		display: block;
 		width: 100%;
 		height: auto;
 	}
     
-    .products__item-heading {
+    .product-products__item-heading {
     	font-size: 13px;
     	line-height: 16px;
     	text-transform: uppercase;
     	padding: 25px 0 12px 18px;
     }
     
-    .products__item-text {
+    .product-products__item-text {
     	font-weight: 300;
     	font-size: 14px;
     	line-height: 17px;
@@ -122,13 +114,13 @@
 		}
     }
     
-    .products__item-price {
+    .product-products__item-price {
     	line-height: 19px;
     	color: $dark-pink;
-    	padding: 0 0 0 18px;
+    	padding: 0 0 18px 18px;
     }
     
-    .products__button {
+    .product-products__button {
     	width: 211px;
     	height: 47px;
     	color: $dark-pink;
@@ -143,9 +135,9 @@
 
     }
 
-	.products__button:hover,
-	.products__button:focus,
-	.products__button:active {
+	.product-products__button:hover,
+	.product-products__button:focus,
+	.product-products__button:active {
 	color: $white;
 	background: $dark-pink;
 	cursor: pointer;
