@@ -1,5 +1,5 @@
 body {
-	font-family: Lato, sans-serif;
+	font-family: 'Lato', 'Arial', sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -29,12 +29,68 @@ body {
 	width: 75%;
 	margin: 0 auto;
 	@include tablet {
-		width: 95%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	@include mobile {
-		width: 96%;
+		width: 94%;
 		margin: 0 auto;
 	}
+}
+
+
+.menu-icon {
+	color: $white;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+.carousel-indicators [data-bs-target] {
+	background: $dark-pink;
+	border: none;
+}
+
+.carousel-inner {
+	background-color: #F7F7F7;
+}
+
+.img-mobile-size {
+	@include mobile {
+		width: 100%;
+	}
+}
+
+.next-arrow,
+.prev-arrow {
+	color: $dark-pink;
+    font-size: 32px;
+    padding: 8px 14px;
+    background: rgb(121, 121, 121);
+}
+
+.next-arrow {
+	margin-left: auto;
+}
+
+.prev-arrow {
+	margin-right: auto;
+}
+
+.dropdown-link {
+	color: $dark-grey;
+	text-transform: uppercase;
+	@include font(16px, 18px);
+	@include mobile {
+		@include font(10px, 12px);
+	}
+}
+
+.dropdown-link:hover {
+	color: $light-grey;
+} 
+
+.cart-icon {
+	margin-right: 22px;
+	font-size: 22px;
 }
 

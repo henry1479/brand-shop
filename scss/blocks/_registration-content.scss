@@ -14,9 +14,9 @@
 
     .content__wrapper-form {
         max-width: 360px;
-        padding-right: 128px;
-        @include tablet {
-            padding-right: 22px;
+        margin-right: 128px;
+        @include desktop {
+            margin-right: 22px;
         }
     }
 
@@ -119,7 +119,7 @@
         line-height: 29px;
         width: 652px;
         margin-bottom: 21px;
-        @include tablet {
+        @include desktop {
             font-size: 16px;
             line-height: 19px;
             width: auto;
