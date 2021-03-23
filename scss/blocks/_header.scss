@@ -12,6 +12,14 @@
             text-decoration: none;
             padding-right: 41px;
         }
+
+        .header__icon {
+            transition: transform 700ms ease-out;
+        }
+
+        .header__logo-link:hover .header__icon {
+            transform: scale(1.07);
+        }
         
         .header__button {
             background: transparent;
@@ -25,6 +33,7 @@
         
         .header__link .header__icon {
             fill:$white;
+            
         }
         
         .header__person-link {
@@ -41,7 +50,7 @@
             @include mobile {
                 display: none;
             }
-            .header__cart-link--counter {
+            .header__cart-link-counter {
                 border-radius: 50%;
                 background: $dark-pink;
                 color: $white;
@@ -59,6 +68,7 @@
         .header__link:hover .header__icon,
         .header__link:active .header__icon {
             fill: $dark-pink;
+            transform: scale(1.07);
         }
     }
      
