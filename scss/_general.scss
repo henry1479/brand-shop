@@ -79,7 +79,7 @@ body {
 .dropdown-link {
 	color: $dark-grey;
 	text-transform: uppercase;
-	@include font(16px, 18px);
+	@include font(14px, 17px);
 	@include mobile {
 		@include font(10px, 12px);
 	}
@@ -95,19 +95,66 @@ body {
 }
 
 
-  @keyframes rotate-center {
+@keyframes rotate-center {
 	0% {
-	  transform: rotate(0);
+		transform: rotate(0);
 	}
 	100% {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
+}
 
-  .row > * {
-	  padding-left: 0;
-	  padding-right: 0;
-  }
+.row > * {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.btn-group  {
+	border:1px solid $light-grey;;
+	border-radius: 2px;
+	
+	
+}
+
+.btn {
+	color: $light-grey;
+	font-size: 16px;
+	line-height: 19px;
+	@include mobile {
+		padding: 0.2rem 0.4rem;
+	}
+}
+
+.btn:hover {
+	color: $dark-pink;
+}
+
+.btn-arrow {
+	color: #000;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.nav-link {
+	@include mobile {
+		padding: 0.5rem 0.2rem;
+	}
+    
+}
+
+.me-2 {
+     margin-right: 0!important;
+}
+
+@media (min-width: 576px) {
+	.container, .container-sm {
+		max-width: 95%;
+}
+}	
 
  
 
