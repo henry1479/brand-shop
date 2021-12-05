@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <title>My shop</title>
 </head>
 
@@ -337,8 +337,8 @@
                 <div class="contacts__wrapper">
                     <div class="contacts__feedback">
                         <img src="img/smile.png" alt="smile" width="96" height="96">
-                        <p class="contacts__feedback-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                            pulvinar purus condimentum“</p>
+                        <p class="contacts__feedback-text"><?=$_GET['name']?></p>
+                        <p class="contacts__feedback-text">“<?=$_GET['text']?>“</p>
                     </div>
                     <div class="contacts__form">
                         <p class="contacts__form-title">subscribe
@@ -350,6 +350,12 @@
                                 class="contacts__form-email">
                             <button type="submit" class="contacts__form-button">Subscribe</button>
                         </form>
+                        <?php 
+                            include('php/components/feedbackForm.php');
+                        ?>
+                    <div>
+                        <?=$_GET['alert'];?>
+                    </div>
                     </div>
                 </div>
             </div>
