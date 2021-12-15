@@ -44,6 +44,17 @@ function getGoodsByCartId ($link) {
     }
     return $goods;
 }
+ 
+function addCount($link,$id,$count) {
+    $sql = "INSERT cart (count) VALUES $count WHERE good_id=$id";
+    $result = mysqli_query($link,$sql);
+
+    if(!$result) 
+        die(mysqli_error($link));
+    // возвращаем количество измененных строк
+    return mysqli_affected_rows($link);
+
+}
 
 
 

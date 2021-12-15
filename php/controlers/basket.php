@@ -18,7 +18,12 @@ $count = 1;
     if(isset($cartGood)) {
         $id = $cartGood['good_id'];
         incrementNumberItemsOfGood($link,$id);
-    } else {
+       
+    } elseif (isset($cartGood) && isset($_POST['count'])) {
+        $count =(int)$_POST['count'];
+        addCount($link,$id,$count);
+    }     
+    else {
         addGoodToCart($link, $id, $count, $login);
     }
 

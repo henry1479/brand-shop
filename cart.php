@@ -114,7 +114,7 @@ include "./php/models/db.php";
                                 </li>
                                 <li class="cart-content__subitem">
                                     Quiantity:<span class="cart-content__value"><input type="number" value=<?= $good['count']?>
-                                            class="cart-content__quantity" onchange="setCount(<?=(int)$good['good_id']?>)"/></span>
+                                            class="cart-content__quantity" id=<?=$good['good_id']?>/></span>
                                 </li>
                             </ul>
                         </li>

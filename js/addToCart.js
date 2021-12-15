@@ -1,5 +1,4 @@
 function addToCart(id) {
-    
     $.ajax({
         type: 'POST',
         url: './php/controlers/basket.php',
