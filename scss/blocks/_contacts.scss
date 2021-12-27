@@ -1,6 +1,7 @@
 .contacts {
     background-image: url(../img/bg-subscribe.png);
     padding: 97px 0 126px 0;
+    background-size: cover;
 	@include tablet {
 		padding: 53px 0 140px 0;
 		background-size: auto 100%;
@@ -52,6 +53,7 @@
     	display: flex;
     	justify-content: center;
     	min-height: 49px;
+        margin-bottom: 30px;
     }
     
     .contacts__form-email {
@@ -63,6 +65,7 @@
     	padding: 0 0 0 22px;
     	font-size: 14px;
     	line-height: 17px;
+        
     	outline: none;
 		@include mobile {
 			width: 75%;
@@ -117,5 +120,15 @@
 		@include mobile {
 			@include font(14px,21px);
 		}
+    }
+
+    .contacts__form-feedback {
+        
+        
+    }
+
+    .contacts__form-feedback_text {
+        border-radius: 20px;
+        margin-right: 10px;
     }
 }
