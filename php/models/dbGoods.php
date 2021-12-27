@@ -20,7 +20,7 @@ function addGood($link,$name, $price, $description, $src) {
 // получает все товары из бд
 
 function getAllGoods($link) {
-    $query = "SELECT * FROM goods ORDER BY id desc";
+    $query = "SELECT * FROM goods ORDER BY id desc LIMIT 2";
     $result = mysqli_query($link, $query);
 
 

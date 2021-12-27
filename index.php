@@ -1,7 +1,7 @@
 <?php
     include "./php/models/dbGoods.php";
     include "./php/models/getAllFeedbacks.php";
-
+    print_r($_GET);
     
 
 ?>
