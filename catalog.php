@@ -1,7 +1,7 @@
 <?php
     include "./php/models/dbGoods.php";
     include "./php/models/getAllFeedbacks.php";  
-    print_r($_GET);
+    
 ?>
 
 
@@ -72,6 +72,12 @@
 
     </header>
     <main>
+        <?php
+        // print_r($_SERVER);
+     
+        print_r($_GET);
+        
+       ?>
         <section class="catalog-title">
             <div class="container">
                 <div class="catalog-title__wrapper">
@@ -132,10 +138,13 @@
                 </div>
             </div>
             <ul class="catalog-products__list">
-            <?php $goods = getAllGoods($link);
+            <?php 
+               
+                $goods = getAllGoods($link);
+                
                 
                 foreach($goods as $good):?>
-                <li class="catalog-products__item">
+                <li class="catalog-products__item" data-id=<?=$good['id']?>>
                     <div class="catalog-products__overlay-wrapper">
                         <div class="catalog-products__overlay">
                             <button type="button" class="cart">
@@ -170,7 +179,7 @@
                         <button type="button" class="btn">6...20</button>
                         <button type="button" class="btn btn-arrow">></button>
                     </div>
-                    <button  href="#" class="products__button" onClick="getMoreCard()">See more Product</button>
+                    <a  href="#" class="products__button-test" type="button">See more Product</a>
                 </div>
             </div>
         </section>
@@ -289,10 +298,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
-    <script src="js/getMoreCard.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
-</body>
+    <script src="js/getMoreCard.js">
+    </script>
 
 </html>
