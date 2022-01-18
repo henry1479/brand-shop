@@ -17,7 +17,7 @@ switch ($_GET['c'])
     case 'articles':
         $controller = new C_Page();
         break;
-    case 'User':
+    case 'user':
         $controller = new C_User();
         break;
     default:
